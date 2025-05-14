@@ -25,7 +25,11 @@ function diminuir() {
  
 function update() {
     const p = document.querySelector('#resultado')
-    p.innerText = numero
+    // jeito errado.
+    // p.innerText = numero
+    p.innerText = numero.toString() 
+
+
 }
 
 // iniciar
