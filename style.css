@@ -11,10 +11,39 @@ body {
 }
 
 section {
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    color: pink;
+    border:  3px solid rgb(192, 24, 99);
 
 }
 
+h1 {
+    font-family: 'trirong,serif';
+    font-size: 50px;
+    /* pq n consigo colocar borda na letra?*/
+}
+
+.border-webkit {
+-webkit-text-stroke: 5px solid rgb(192,24,99));
+}
+
 p {
-    font-size: 25px;
+    font-size: 100px;
+
+}
+
+button {
+    background-color: rgb(238, 201, 207);
+    border: 5px solid rgb(192,24,99);
+    border-radius: 8px;
+    margin: 5px;
+    font-weight: bolder;
+}
+
+button:hover{
+    cursor: grab;
+    scale: 112%;
 }
 
