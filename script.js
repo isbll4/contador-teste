@@ -28,8 +28,6 @@ function update() {
     // jeito errado.
     // p.innerText = numero
     p.innerText = numero.toString() 
-
-
 }
 
 // iniciar
