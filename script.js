@@ -1,36 +1,24 @@
-// Estado da Aplicação
 let numero = 0
 
-// variaveis da Aplicação
+function adicionar(value) {
+  const newNumber = numero + value;
 
-function aumentar() {
-    numero++
-    update()
+  numero = newNumber
 
+  render()
 }
 
 function anular() {
-    numero = 0
-    update()
-
+  numero = 0;
+  
+  render();
 }
 
-function diminuir() {
-    numero--
-    update()
+function render(){
+  const p = document.querySelector("#resultado")
 
+  p.innerText = numero
 }
 
-// Atualizar estado da aplicação
- 
-function update() {
-    const p = document.querySelector('#resultado')
-    // jeito errado.
-    // p.innerText = numero
-    p.innerText = numero.toString() 
-
-
-}
-
-// iniciar
-update()
+console.log(numero)
+render()
