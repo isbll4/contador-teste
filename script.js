@@ -1,9 +1,14 @@
 let numero = 0
+let step = 1;
+
+const input = document.querySelector("#stepValue");
+
+input.addEventListener("change", (event) => {
+  step = parseInt(event.target.value);
+});
 
 function adicionar(value) {
-  const newNumber = numero + value;
-
-  // Prevent number from going below 0
+  const newNumber = numero + step;
 
   if (newNumber > 10) {
     numero = 10;
@@ -17,6 +22,7 @@ function adicionar(value) {
 
 function anular() {
   numero = 0;
+  step = 1;
   
   render();
 }
