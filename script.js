@@ -15,7 +15,6 @@ function adicionar(value) {
 
 function anular() {
   numero = 0;
-  step = 1;
   
   render();
 }
