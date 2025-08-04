@@ -1,14 +1,7 @@
 let numero = 0
-let step = 1;
-
-const input = document.querySelector("#stepValue");
-
-input.addEventListener("change", (event) => {
-  step = parseInt(event.target.value);
-});
 
 function adicionar(value) {
-  const newNumber = numero + step;
+  const newNumber = numero + value;
 
   if (newNumber > 10) {
     numero = 10;
@@ -31,6 +24,9 @@ function render(){
   const p = document.querySelector("#resultado")
 
   p.innerText = numero
+
+  const titulo = document.querySelector("#titulo-contador")
+  titulo.innerText = "Contador " + numero
 }
 
 console.log(numero)
