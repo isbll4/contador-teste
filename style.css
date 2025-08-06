@@ -1,16 +1,36 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 10px;
 }
 
 body {
+    background-color: pink;
+    place-items: center;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 
 }
 
 section {
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: ;
+}
 
 p {
     font-size: 100px;
+    color: white;
+}
 
+.buttons {
+    background-color: pink;
+
+}
+
+h1 {
+    font-size: 40px;
 }

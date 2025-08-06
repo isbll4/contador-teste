@@ -1,33 +1,22 @@
 let numero = 0
 
-function adicionar(value) {
-  const newNumber = numero + value;
-
-  if (newNumber > 10) {
-    numero = 10;
-    alert("The limit is 10!");
-  } else {
-    numero = newNumber;
-  }
-
-  render()
+function adicionar(valor) {
+  numero += valor
+  update()
 }
 
 function anular() {
-  numero = 0;
-  step = 1;
-  
-  render();
+  numero = 0
+  update()
 }
 
-function render(){
-  const p = document.querySelector("#resultado")
+function update() {
+  const p = document.querySelector('#resultado')
 
-  p.innerText = numero
+  p.innerText = numero.toString()
 
-  const titulo = document.querySelector("#titulo-contador")
-  titulo.innerText = "Contador " + numero
+  // const titulo = document.querySelector('#titulo-resultado')
+  // titulo.innerText = "Contador " + numero
 }
 
-console.log(numero)
-render()
+update()
